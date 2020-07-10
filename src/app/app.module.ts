@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DayComponent } from './day/day.component';
+import { TopicComponent } from './topic/topic.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DayComponent,
+    TopicComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

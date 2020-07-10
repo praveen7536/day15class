@@ -1,0 +1,19 @@
+<h3>Training Page</h3>
+<div class="row">
+    <div class="col-lg-3">
+        <div class="container Box">
+            <button class="btn btn-primary" id="addDays" (click)="addDays()">Add Days</button>
+            <h6 *ngFor="let day of values">
+                <button class="btn btn-info" id="{{day}}" (click)="createTopics(this)">Day </button>
+            </h6> 
+        </div>
+    </div>
+
+
+    <!-- <div class="col-lg-4 Box">
+        <div>
+            <button class="btn btn-primary" id="addtopics" (click)="addNewTopic()">Add Topic</button>
+           
+        </div>
+    </div> -->
+</div>
